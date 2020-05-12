@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Bem estar do paciente</title>
+
+    <style type="text/css">
+    #container{
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 0 auto;
+    }
+    
+    </style>
+  </head>
+
+  <body style="background-color:whitesmoke;">
+    <div id="container"></div>
+    <h1
+   <header id="cabeçalho"> <div<center style="color:blue;"
+     id="titulo"><ins>Estado do Paciente</h1><br><br></div></ins>
+    </header>
+    <section id="se">
+    <div id="formulario01">
+
+           <h1> <fieldset><legend style="font-weight: 900;";>Descrição do Paciente</legend></h1><br>
+                <p><h2>Nome Completo</p></h2> <input type="text" id="nome01" value="" maxlength="180" size="30" placeholder="Nome completo do paciente"></br><br>
+                <h2>Selecione o Nível de Risco</h2><br>
+                <h4>Nível Baixo - <button type="button" class="btn btn-outline-success" id="verde" onclick="alaverde"> Ala Verde</button></h4>
+                <h4>Nível Médio - <button type="button" class="btn btn-outline-warning" id="amarelo" onclick="alaamarelo"> Ala Amarelo</button></h4>
+                <h4>Nível Alto - <button type="button" class="btn btn-outline-danger" id="vermelho" onclick="alavermelha"> Ala Vermelha</button></h4>
+                <br><br>
+            </fieldset>    
+    </div>
+    </section>
+
+    <br>
+  
+    <div style="color:green;" id="alaverde01">
+      <form>
+        <fieldset id="alaverde001"><legend>Ala Verdes <span class="badge badge-pill badge-success">Baixo</span></legend>
+        
+        </fieldset>
+      </form>
+    </div>
+
+    <div style="color:yellow;" id="alaamarelo01">
+      <form>
+        <fieldset id="alaamarelo001"><legend>Ala Amarelo <span class="badge badge-pill badge-warning">Médio</span></legend>
+
+        </fieldset>
+      </form>
+    </div>
+    
+    <div style="color:red;" id="alavermelho01">
+
+      <form>
+        <fieldset id="alavermelho001"><legend>Ala Vermelho <span class="badge badge-pill badge-danger">Alta</span</legend>
+
+        </fieldset>
+      </form>
+    </div> 
+    <br><br><br>  
+
+
+    <footer id="rodape">
+      <p>Copyright &copy;2020 - by Jonathan Costa</p>
+    </footer>
+
+
+
+    <script>
+      
+      //Adicionando Pacientes na ala verde com jquery
+    $("#verde").click(function(){
+         alert("Atenção! Paciente Adicionado")
+         var nome01 = $("#nome01").val();
+         var nome01 =$("#alaverde001").append("<p>"+nome01+"</p>");
+    
+    });
+      //Adicionando Pacientes na ala amarelo com jquery
+    $("#amarelo").click(function(){
+         alert("Atenção! Paciente Adicionado")
+         var nome02 = $("#nome01").val();
+         var nome02 =$("#alaamarelo001").append("<p>"+nome02+"</p>");
+    
+    });
+      //Adicionando Pacientes na ala vermelho com jquery
+    $("#vermelho").click(function(){
+         alert("Atenção! Paciente Adicionado")
+         var nome03 = $("#nome01").val();
+         var nome03 =$("#alavermelho001").append("<p>"+nome03+"</p>");
+    
+    });
+     
+      </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+ </body>
+</html>
